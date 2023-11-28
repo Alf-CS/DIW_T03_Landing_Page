@@ -9,7 +9,7 @@
   max-width:1200px;
   margin:0 auto;
   width:100%;
-  border: 1px solid purple;
+  /*border: 1px solid purple;*/
   /*margin: 0 1fr 0;*/
 }
 
@@ -40,7 +40,7 @@ nav {
     width:90%;
     left:0px;
     /*border: solid blue 3px;*/
-    background-color: lightgreen;
+    /*background-color: lightgreen;*/
 }
     nav ul {
       position: relative;
@@ -107,7 +107,7 @@ a {
 section{
   width: 80%;
   margin: 30px 10% 0px;
-  border: solid red 3px;
+  /*border: solid red 3px;*/
 }
 
 
@@ -314,6 +314,84 @@ section{
   height:auto;
 }
 
+
+/*ESTILOS CAREER*/
+.container {  /*Contenedor principal*/
+  display: grid;
+  grid-template-rows: repeat(4, auto); /* 4 filas de tamaño auto*/
+  grid-template-columns: repeat(5, 1fr); /* 5 columnas(Celdas) con 1 fr*/
+  gap: 5px;
+  height: 90vh; /* Altura de ejemplo */
+}
+
+.career{
+  text-align:center;
+}
+
+/* Estilos para las secciones */
+.header {
+  border: solid 2px;
+  grid-row: 1 / 2;
+  grid-column: 1 / -1;
+  background-color: lightblue;
+}
+
+.aside_1 {
+  border: solid 2px;
+  grid-row: 2 / span 2;
+  grid-column: 1 / 2;
+  background-color: lightgreen;
+}
+
+.main {
+  border: solid 3px;
+  grid-row: 2 / span 2;
+  grid-column: 2 / span 3;
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+
+.aside_2 {
+  border: solid black 2px;
+  grid-row: 2 / span 2;
+  grid-column: 5 / 6;
+}
+
+
+
+/* Estilos para el grid dentro de la sección "main" */
+.inner_container {
+  border: solid gray 3px;
+  grid-row: 2 / 4;      /*Valores respecto al contenedor inicial*/
+  grid-column: 2 / 5;   /*Valores respecto al contenedor inicial*/
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+
+.submain_1,
+.submain_2,
+.submain_3 {
+  
+}
+
+.submain_footer {
+  border: solid gray 1px;
+  grid-row: 2 / 3;
+  grid-column: 1 / 4;
+}
+
+.career-img{
+  width:99%;
+  heigth:auto;
+}
+
+
+
+/*ESTILOS CONTACTO*/
 .wrapper-contact{ /*  #sec_contact{*/
     
 background-image: url(../img/bg-cuadros.png);
