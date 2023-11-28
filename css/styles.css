@@ -7,6 +7,7 @@
 
 .main-container{
   max-width:1200px;
+  margin:0 auto;
   width:100%;
   border: 1px solid purple;
 }
@@ -299,6 +300,37 @@ section{
 }
 
 
+#sec_contact{
+  background-image: url(../img/bg-cuadros.png);
+}
+
+.flex-container-contact {
+  width:50%;
+  background-color: #49be55;
+  max-width: 1200px; /* Establece el ancho máximo del formulario: anchura controlada (ciertos límites de anchura) */
+  margin: 0 auto; /* Centra el formulario horizontalmente */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+  /* border: 2px solid black;*/
+  /* padding: 20px;*/
+  /* position: relative; /*para poder posicionar el botón*/
+}
+
+
+.flex-item {
+  text-align: left;
+  margin: 5px 0;
+}
+
+.label-field{
+  display:block;
+}
+
+.btn-submit{
+  width:150px;
+}
 
 
 
