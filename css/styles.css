@@ -271,27 +271,27 @@ section{
 				/*padding: 10px;*/
 				/*justify-content: left; //display:block */
 				border: 2px solid black;
-				box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+				box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.8);
 				/*overflow: hidden;*/
-				background-color:rgb(210, 236, 156);
+				/*background-color:rgb(210, 236, 156);*/
+        background-color: #ffffff;
 			  }
         
 			  .content-card{
 				padding: 4px;
 			  }
 
-			  .btn-card {
-				width: calc(100% - 16px);
-				margin: 8px;
-				padding: 8px;
-				background-color: gray;
-				border: none;
-				color: white;
-				text-align: center;
-				text-decoration: none;
-				display: inline-block;
-				font-size: 16px;
-			  }
+
+
+        .text-card{
+          font-size: 15px;
+        }
+
+        .link-card{
+          text-decoration: none;
+          color:#49be55;
+        }
+
 
 .work-img{
   max-width:100%;
@@ -318,6 +318,8 @@ section{
     height:90%;
     text-align:center;
   }
-  
+  .enlace{
+color:lightgray;
+  }  
 
 
