@@ -1,0 +1,323 @@
+/* Estilos para la barra de navegación */
+* {
+    margin:0;
+    padding:0;
+    font-family: Poppins; /*Cambiamos fuente por defecto a Poppins*/
+}
+
+.main-container{
+  max-width:1200px;
+  width:100%;
+  border: 1px solid purple;
+}
+
+.logo {
+  position: absolute;
+  top: 5px;
+  left: 10%;
+}
+
+.title{
+  font-size: 2em;
+}
+
+.title2{
+  font-size: 1.8em;
+}
+
+.texto{
+  font-size: 1em;
+}
+
+
+nav {
+    /*position: sticky?;*/
+    margin: 10px 10% 40px 20%;
+    width:70%;
+    right:0;
+    /*border: solid blue 3px;*/
+    /*background-color: lightgreen;*/
+}
+    nav ul {
+      position: relative;  
+      margin: 10px;
+      padding: 0px;
+      text-align: right;
+    }     
+    nav ul li {
+        display: inline-block;
+        margin-right: 1em;
+        font-size: 0.8em;
+    }
+    nav ul li a {
+        color: black;
+        padding: 10px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    nav ul li a:hover{
+      padding:10px;
+      border-radius: 10px;
+      background-color: #a174db;
+      color: white;
+    }
+    nav ul li a:focus{
+      background-color: white;  
+      color:#a174db;
+    }
+
+a {
+  text-decoration: none;
+}
+.btn { /*Botón con fondo blanco*/
+  width:80%;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+  color: #a174db;
+  border: solid 1px #a174db;
+  display:inline;
+  transition: font-weight 0.3s ease;
+}  
+    .btn:hover { /*HOVER sobre botón*/
+        width:80%;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #a174db;
+        font-weight: bold;
+        color: white;
+    }
+    .btn:active{  /*PULSACION sobre botón*/
+      width:80%;
+      padding: 10px;
+      border-radius: 10px;
+      color: white;
+      background-color: #49be55;
+      border: solid 1px #a174db;
+    }
+
+section{
+  width: 80%;
+  margin: 30px 10% 0px;
+  border: solid red 3px;
+}
+
+.main-container{
+  margin: 0 1fr 0;
+}
+
+/* SECCION HOME*/
+#sec_home{
+  width:50%;
+  margin: 60px 25% 0px;
+  border: solid green 2px;
+   /*background-image: url("../img/bg-hero.jpg");*/
+  /*background-color: transparent;*/
+}
+
+  /* Estilos para el contenedor flex */
+  .flex-container-home {
+    /*height:50%;
+    width:auto;
+    width: 100vh?? -Responsive?*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+.img-grande{
+  width:90%;
+  margin:20px 0px;
+}
+
+
+.bg-home-img{
+  position: absolute;
+  top:50px;
+  width:100vw;
+  /*max-width:2000px;*/
+  height:auto; /* ¿Cómo adaptamos la altura?*/
+  z-index: -1;
+  /*
+  display:block;
+  overflow:hidden;
+  */
+}
+
+
+/* SECCION ABOUT*/
+
+/*.about{
+  width:40%;
+}*/
+
+
+.flex-container-about-row{
+  display: flex;
+  align-items:center;
+  gap:10px;
+  justify-content: space-around;
+}
+.flex-container-about{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  width:48%;
+  /*align-items: center;
+  justify-content: center;*/
+}
+
+.img-about-container{
+  width:48%;
+}
+
+.img-about-container img{
+  max-width: 100%;
+  height:auto;
+
+}
+
+
+
+
+.flex-item{
+  margin-bottom:5px;
+}
+
+/*.about-img{
+  max-width:100%;
+  height:auto;
+}*/
+
+
+
+.bg-form-img{
+  position:absolute;
+  bottom:0;
+  width:98vw;
+  height:50vh;
+  z-index: -1;
+}
+
+  img {
+    width: auto;
+    height: 50%;
+    position: relative;
+    z-index: 1;
+  }
+  
+/*
+  .content {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: solid 3px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }*/
+
+    /* Estilos para la sección Home */
+
+  
+  /* Estilos para los elementos flex */
+  .flex-item {
+    text-align: center;
+    margin: 5px 0;
+  }
+  
+
+  /* Estilos para la sección About, Portfolio, Career, Contact */
+
+/* Estilos PORTFOLIO --> Works*/
+
+  .portfolio{
+    text-align:center;
+  }
+			.wrapper-portfolio {
+				display: flex;
+				flex-direction:row;
+				max-width: 1200px;
+				flex-wrap:wrap;
+				width: 100%;
+				min-height: 400px;
+				height:auto;
+				justify-content: space-around;
+				/*align-items:center;*/
+				align-items: stretch; 
+				background-color: #ffffee; /*white;*/
+				/*text-align: center;*/
+				/*box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);*/
+				margin: 0px;
+			}
+
+			.work-card {
+				display:flex;
+				flex-direction:column;
+				width: 30%;
+				min-height:100px;
+				height:auto;
+				justify-content:flex-start;
+				align-items:start;
+
+
+				box-sizing: border-box;
+				/*box-sizing: content-box;*/
+				/*width: 350px;*/
+				margin: 15px;
+				/*padding: 10px;*/
+				/*justify-content: left; //display:block */
+				border: 2px solid black;
+				box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+				/*overflow: hidden;*/
+				background-color:rgb(210, 236, 156);
+			  }
+        
+			  .content-card{
+				padding: 4px;
+			  }
+
+			  .btn-card {
+				width: calc(100% - 16px);
+				margin: 8px;
+				padding: 8px;
+				background-color: gray;
+				border: none;
+				color: white;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 16px;
+			  }
+
+.work-img{
+  max-width:100%;
+  height:auto;
+}
+
+
+
+
+
+
+  
+  /* Estilos para el footer */
+  footer {
+    height: 10vh;
+    /* Estilos generales para el footer */
+  }
+  
+  .footer-content {
+    text-align: center;
+  }
+  
+  .footer-logo {
+    height:90%;
+    text-align:center;
+  }
+  
+
+

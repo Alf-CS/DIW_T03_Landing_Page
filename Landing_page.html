@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- <meta http-equiv=" X-UA-Compatible" content=" IE=edge"> -->
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+	<meta charset="utf-8">
+	<title>Ejercicio final 1ª Evaluación</title>
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body> 
+
+<img class="bg-home-img" src=".\img\bg-hero.jpg" alt="Hero Background">
+
+
+	
+<!--<div class="main-container">	-->
+
+	<!-- Barra de Navegación -->
+	<nav class="navbar">
+		<div class="logo">
+		  <img src=".\img\logotipo.png" alt="Logo">
+		</div>
+
+		<ul class="nav-links">
+		  <li><a href="#sec_home">Home</a></li>
+		  <li><a href="#sec_about">About</a></li>
+		  <li><a href="#sec_portfolio">Portfolio</a></li>
+		  <li><a href="#sec_product">Product</a></li>
+		  <li><a href="#sec_career">Career</a></li>
+		  <li><a href="#sec_blog">Blog</a></li>
+		  <li><a href="#sec_contact">Contact Us</a></li>
+		</ul>
+	  </nav>
+    
+	<!-- Sección HOME : ACABADA  a falta de BACKGROUND-->
+    <section id="sec_home" class="section">
+        <div class="flex-container-home">
+                <div class="flex-item title"><b>We Create Simple Solutions</b></div>
+                <div class="flex-item title">For Your Complex Task</div>
+                <div class="flex-item texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad...</div>
+                <div class="flex-item">
+							<a class="btn" href="#sec_portfolio">Our Works</a>
+							<a class="btn" href="#sec_contact">Know more</a>
+				</div>
+                <div class="flex-item">
+					<img class="img-grande" src=".\img\01.png" alt="Resolviendo un problema"> 
+				</div>
+        </div>
+    </section>
+
+
+	<!-- Sección ABOUT: ¿Transformar a FLEX similar al de PORTFOLIO? -->
+	<section id="sec_about" class="section">
+		<div class="flex-container-about-row">
+			<div class="about flex-container-about">
+				<div class="flex-item title2">The Process</div>
+				<div class="flex-item title2"><b>About Our Work</b></div>
+				<div class="flex-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad...</div>
+				<div class="flex-item">
+					<a class="btn" href="#sec_portfolio">Know More</a>
+					</div>
+			</div>
+
+			<div class="img-about-container">
+				<img class="about" src=".\img\02.png" alt="Mujer con globo">
+			</div>
+
+		</div>
+			
+		
+		<div class="flex-container-about-row">
+
+			<div class="img-about-container">
+				<img class="about" src=".\img\03.png" alt="Sentado en television">
+			</div>
+
+			<div class="about flex-container-about">
+						<div class="flex-item title">We are here to</div>
+						<div class="flex-item title"><b>always help</b> you</div>
+						<div class="flex-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad...</div>
+						<div class="flex-item">
+							<a href="#sec_contact" class="btn">Know More</a>
+						</div>
+			</div>
+
+		</div> <!--flex-container-about-down-->
+
+
+	</section>
+	
+	  <!-- Sección PORTFOLIO -->
+	  <section id="sec_portfolio" class="section">
+		<div class="title2 portfolio"> Some of <b>Our Works</b></div>
+		<div class="wrapper-portfolio"> 
+
+			<div class="work-card">
+				<img class="work-img" src=".\img-works\img1.png" alt="Imagen 1">
+				<div class="content-card">
+					<h3> Página de error sencilla </h3>
+					<p> Este es un proyecto sencillo sobre una página de error
+						sencilla y "convencional"</p>
+					<button class="btn-card">
+						<a href="https://github.com/Alf-CS/DIW_T03_P02">Ver en Github</a>
+					</button>
+				</div>
+			</div>
+	
+			<div class="work-card">
+				<img class="work-img" src=".\img-works\img1.png" alt="Imagen 1">
+				<div class="contenido">
+					<h3> Reverse the display of the items </h3>
+					<p> the flex-direction property can take one of four values: 
+						<b>row, column, row-reverse, column-reverse</b> 
+						The first two values keep the items in the same order that 
+						they appear in the document source ...
+					</p>
+					<button class="btn-card">
+						<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Ordering_flex_items">Ver más</a>
+					</button>
+				</div>
+			</div>
+	
+			<div class="work-card">
+				<img class="work-img" src=".\img-works\img1.png" alt="Imagen 1">
+				<div class="contenido">
+					<h3> Ordering flex items </h3>
+					<p> Now, we have the possibility of controlling the order of content. 
+						Take a look at ways in which you can change the visual order of 
+						your content when using Flexbox.
+					</p>
+					<button class="btn-card">
+						<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Ordering_flex_items">Ver más</a>
+					</button>
+				</div>
+			</div>
+	
+			<div class="work-card">
+				<img class="work-img" src=".\img-works\img1.png" alt="Imagen 1">
+				<div class="contenido">
+					<h3> Aligning items in a flex container </h3>
+					<p> One of the reasons that flexbox quickly caught the interest of 
+						web developers is that it brought proper alignment capabilities 
+						to the web for the first time. It enabled proper vertical alignment, 
+						so we can at last easily center a box. In this guide, we will take a thorough look at how the alignment and justification properties work in Flexbox.
+					</p>
+					<button class="btn-card">
+						<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Aligning_items_in_a_flex_container">Cuéntame más...</a>
+					</button>
+				  
+	
+				</div>
+			</div>
+	
+			<div class="work-card">
+				<img class="work-img" src=".\img-works\img1.png" alt="Imagen 1">
+				<div class="contenido">
+					<h3> Typical use cases of flexbox</h3>
+					<p> In this guide, we will take a look at some of the common 
+						use cases for flexbox — those places where it makes more sense 
+						than another layout method.
+					</p>
+					<button class="btn-card">
+						<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Typical_use_cases_of_flexbox">Me interesa...</a>
+					</button>
+				</div>
+			</div>
+	
+			<div class="work-card">
+				<img class="work-img" src=".\img-works\img1.png" alt="Imagen 1">
+				<div class="contenido">
+					<h3> Reverse the display of the items </h3>
+					<p> the flex-direction property can take one of four values: 
+						row, column, row-reverse, column-reverse. 
+						The first two values keep the items in the same order that 
+						they appear in the document source ...
+					</p>
+				  <button class="btn-card">Ver más</button>
+				</div>
+			</div>
+
+	
+		</div>
+	
+		  
+
+	  </section>
+	
+	  <!-- Sección Career -->
+	  <section id="sec_career" class="section">
+		<div class="wrapper_career">
+            'Sección Career'
+		  <!-- Contenido de la sección Career -->
+		</div>
+	  </section>
+	
+	  <!-- Sección Contact -->
+	  <section id="sec_contact" class="section">
+		<div class="bg-image-contact">
+            Sección 'Contact'
+		  <!-- Imagen de fondo de la sección Contact -->
+		</div>
+		<!-- Contenido de la sección Contact -->
+	  </section>
+	
+	  <!-- Footer -->
+	  <footer>
+		<div class="footer-content">
+		  <div class="footer-logo">
+			<img src=".\img\logotipo.png" alt="Footer Logo">
+		  </div>
+		  <p>Todos los derechos reservados</p>
+		</div>
+	  </footer>
+	
+	</body>
+	</html>
+	
+	
+</div> <!--MAIN CONTAINER-->
+
+<!-- <img class="bg-form-img" src=".\img\bg-cuadros.png" alt="Background Form"> -->
+
+	<footer class="github">
+		<a class="enlace" href="https://github.com/Alf-CS/DIW_T03_P06"> Enlace a Github</a> 
+	</footer>
+
+
+</body> 
+
+</html>
