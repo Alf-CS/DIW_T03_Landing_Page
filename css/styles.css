@@ -291,8 +291,20 @@ section{
 				/*background-color:rgb(210, 236, 156);*/
         background-color: #ffffff;
 			  }
+
+        .latest-card{
+          width:75%;
+          border: 2px solid blue;
+          background-color: #a174db; /*color primario*/
+        }
         
-			  .content-card{
+			  .highlighted-card{
+          width:60%;
+          background-color: limegreen; /*color secundario*/
+
+        }
+        
+        .content-card{
 				padding: 4px;
 			  }
 
@@ -308,10 +320,11 @@ section{
         }
 
 
-.work-img{
-  max-width:100%;
-  height:auto;
-}
+        .work-img{
+          margin: 10px auto;
+          max-width:90%;
+          height:auto;
+        }   
 
 
 /*ESTILOS CAREER*/
